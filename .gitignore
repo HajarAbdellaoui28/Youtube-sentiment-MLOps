@@ -1,0 +1,26 @@
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.key
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local data
+data/raw/
+data/processed/
+
+# Local model artifacts
+models/
