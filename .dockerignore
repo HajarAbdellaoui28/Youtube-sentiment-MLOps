@@ -1,0 +1,13 @@
+
+.venv/
+.git/
+__pycache__/
+*.pyc
+data/
+logs/
+tests/
+chrome-extension/
+.pytest_cache/
+.env
+.env.*
+*.log

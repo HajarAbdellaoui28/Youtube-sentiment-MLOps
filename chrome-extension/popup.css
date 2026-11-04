@@ -1,0 +1,117 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 390px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #202938;
+}
+
+.container {
+  padding: 18px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 11px;
+  cursor: pointer;
+}
+
+#analyzeBtn, #copyBtn {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  margin: 10px 0;
+}
+
+#themeBtn {
+  background: #e2e8f0;
+}
+
+.stats {
+  display: grid;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.stats div {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.positive {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.neutral {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.negative {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.chart {
+  display: flex;
+  height: 18px;
+  overflow: hidden;
+  border-radius: 6px;
+  margin: 15px 0;
+}
+
+.chart div {
+  height: 100%;
+}
+
+.comment {
+  background: white;
+  border: 1px solid #e2e8f0;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 8px;
+  overflow-wrap: anywhere;
+}
+
+#commentList {
+  max-height: 250px;
+  overflow-y: auto;
+  margin-top: 12px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+}
+
+#status {
+  font-size: 12px;
+}
+
+body.dark {
+  background: #111827;
+  color: #f9fafb;
+}
+
+body.dark .comment {
+  background: #1f2937;
+  border-color: #374151;
+}

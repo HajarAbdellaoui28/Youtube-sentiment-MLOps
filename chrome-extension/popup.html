@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>YouTube Sentiment Analyzer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h2>YouTube Sentiment Analyzer</h2>
+      <button id="themeBtn">🌙</button>
+    </header>
+
+    <p>Analyse des commentaires de la vidéo</p>
+
+    <button id="analyzeBtn">
+      Analyser les commentaires
+    </button>
+
+    <p id="status"></p>
+
+    <section id="results" hidden>
+      <h3>Résultats</h3>
+
+      <p>Total : <span id="total">0</span></p>
+
+      <div class="stats">
+        <div class="positive">
+          Positifs : <span id="positive">0</span>%
+        </div>
+
+        <div class="neutral">
+          Neutres : <span id="neutral">0</span>%
+        </div>
+
+        <div class="negative">
+          Négatifs : <span id="negative">0</span>%
+        </div>
+      </div>
+
+      <div class="chart" id="chart"></div>
+
+      <label for="filter">Filtrer :</label>
+      <select id="filter">
+        <option value="all">Tous</option>
+        <option value="positive">Positifs</option>
+        <option value="neutral">Neutres</option>
+        <option value="negative">Négatifs</option>
+      </select>
+
+      <div id="commentList"></div>
+
+      <button id="copyBtn">
+        Copier les résultats
+      </button>
+    </section>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
